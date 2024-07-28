@@ -1,0 +1,138 @@
+html {
+    font-family: 'Noto-sans', sans-serif;
+}
+
+h1 {
+    font-family: 'Bungee', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition-duration: 300ms;
+}
+
+body {
+    background-color: #EFD9D1;
+    color: #D68060;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 24px;
+}
+
+header, main, footer {
+    width: 800px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    flex: 1;
+}
+
+.plusIcon {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.plusIcon:hover {
+    color: #E6A157;
+}
+
+#enterTodo {
+    display: none;
+}
+
+#enterTodo form {
+    display: flex;
+    align-items: stretch;
+    border: 1px solid #F8A978;
+    position: relative;
+}
+
+#enterTodo form:focus-within {
+    border-color: #b9331e;
+}
+
+#enterTodo input {
+    background: transparent;
+    outline: none;
+    padding: 12px;
+    color: #D68060;
+    flex: 1;
+    border: none;
+}
+
+#enterTodo button {
+    background: #F5B17B;
+    right: 0;
+    top: 0;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding: 0 12px;
+    color: #b9331e;
+    font-family: 'Bungee', sans-serif;
+    cursor: pointer;
+    position: absolute;
+}
+
+#enterTodo button:hover {
+    background: transparent;
+    color: #b9331e;
+}
+
+#todos {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.todoItem {
+    display: flex;
+    align-items: center;
+}
+
+.todoItem p {
+    flex: 1;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    cursor: pointer;
+}
+
+.actions i:hover {
+    color: coral;
+}
+
+footer {
+    display: grid;
+    place-items: center;
+}
+
+footer a {
+    color: inherit;
+}
+
+footer i {
+    cursor: pointer;
+}
+
+footer i:hover {
+    color: #b9331e;
+}
